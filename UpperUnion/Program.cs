@@ -20,6 +20,8 @@ namespace UpperUnion
             {
                 Console.WriteLine("NO ARGUMENTS");
             }
+
+             Console.WriteLine(united);
         }
     }
 }
