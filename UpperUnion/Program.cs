@@ -11,6 +11,11 @@ namespace UpperUnion
             {
                 args[i] = args[i].ToUpper();
             }
+
+            if (args.Length == 0)
+            {
+                Console.WriteLine("NO ARGUMENTS");
+            }
         }
     }
 }
