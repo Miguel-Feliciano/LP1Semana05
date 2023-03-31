@@ -12,6 +12,8 @@ namespace UpperUnion
                 args[i] = args[i].ToUpper();
             }
 
+            Array.Sort(args);
+            
             if (args.Length == 0)
             {
                 Console.WriteLine("NO ARGUMENTS");
