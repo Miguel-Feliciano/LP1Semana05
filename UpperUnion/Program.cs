@@ -13,7 +13,9 @@ namespace UpperUnion
             }
 
             Array.Sort(args);
-            
+
+            united = string.Join("-", args);
+
             if (args.Length == 0)
             {
                 Console.WriteLine("NO ARGUMENTS");
