@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace UpperUnion
 {
@@ -6,15 +7,15 @@ namespace UpperUnion
     {
         static void Main(string[] args)
         {
-            string united;
+            StringBuilder united = new StringBuilder();
             for (int i = 0; i < args.Length; i++)
             {
                 args[i] = args[i].ToUpper();
             }
-
+            
             Array.Sort(args);
-
-            united = string.Join("-", args);
+            
+            united.Append(string.Join("-", args));
 
             if (args.Length == 0)
             {
